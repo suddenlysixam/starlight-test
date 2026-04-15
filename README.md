@@ -47,3 +47,11 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).
+
+## Plugins
+### [starlight-base-path](https://github.com/andriygm/starlight-base-path/)
+`npm install starlight-base-path`
+### [starlight-tags](https://frostybee.github.io/starlight-tags/)
+`npm install starlight-tags`
+### [starlight-blog](https://starlight-blog-docs.vercel.app/)
+`npm i starlight-blog`

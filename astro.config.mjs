@@ -3,6 +3,7 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import { starlightBasePath } from "starlight-base-path";
 import starlightTags from 'starlight-tags';
+import starlightBlog from 'starlight-blog'
 
 // https://astro.build/config
 export default defineConfig({
@@ -43,6 +44,7 @@ export default defineConfig({
 						showViewAllLink: true
 					}
 				}),
+				starlightBlog(),
 			],
 		}),
 	],
