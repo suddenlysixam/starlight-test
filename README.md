@@ -1,14 +1,23 @@
-# Starlight Starter Kit: Basics
-
+# starlight-test
 [![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
 
-```
-npm create astro@latest -- --template starlight
-```
+## Plugins
+### [starlight-base-path](https://github.com/andriygm/starlight-base-path/)
+`npm install starlight-base-path`
+### [starlight-tags](https://frostybee.github.io/starlight-tags/)
+`npm install starlight-tags`
+### [starlight-blog](https://starlight-blog-docs.vercel.app/)
+`npm install starlight-blog`
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## GitHub Pages Deployment
 
-## 🚀 Project Structure
+1. [GitHub Docs: Creating a GitHub Pages site](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site)
+1. [GitHub Docs: Publishing with a custom GitHub Actions workflow](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-with-a-custom-github-actions-workflow)
+1. [Astro Docs: Deploy your Astro Site to GitHub Pages](https://docs.astro.build/en/guides/deploy/github/)
+
+## Starlight Basics
+
+### Starlight Basics: 🚀 Project Structure
 
 Inside of your Astro + Starlight project, you'll see the following folders and files:
 
@@ -31,7 +40,7 @@ Images can be added to `src/assets/` and embedded in Markdown with a relative li
 
 Static assets, like favicons, can be placed in the `public/` directory.
 
-## 🧞 Commands
+### Starlight Basics: 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:
 
@@ -44,14 +53,7 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
+### Starlight Basics: 👀 Want to learn more?
 
 Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).
 
-## Plugins
-### [starlight-base-path](https://github.com/andriygm/starlight-base-path/)
-`npm install starlight-base-path`
-### [starlight-tags](https://frostybee.github.io/starlight-tags/)
-`npm install starlight-tags`
-### [starlight-blog](https://starlight-blog-docs.vercel.app/)
-`npm i starlight-blog`
