@@ -15,6 +15,11 @@
 1. [GitHub Docs: Publishing with a custom GitHub Actions workflow](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-with-a-custom-github-actions-workflow)
 1. [Astro Docs: Deploy your Astro Site to GitHub Pages](https://docs.astro.build/en/guides/deploy/github/)
 
+Other:
+
+1. [GitHub Docs: Skipping workflow runs](https://docs.github.com/en/actions/how-tos/manage-workflow-runs/skip-workflow-runs)
+    - Add `[skip actions]` to the commit message, or the HEAD commit of a pull request
+
 ## Starlight Basics
 
 ### Starlight Basics: 🚀 Project Structure
