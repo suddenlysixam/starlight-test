@@ -72,6 +72,10 @@ Other:
 ### [starlight-ui-tweaks](https://starlight-ui-tweaks.dlcastillop.com/)
 `npm install starlight-ui-tweaks`
 
+## Other Helpful Links
+
+### [Starlight Icons Reference](https://starlight.astro.build/reference/icons/#all-icons)
+
 ## Starlight Basics
 
 ### Starlight Basics: 🚀 Project Structure
