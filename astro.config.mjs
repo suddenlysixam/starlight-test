@@ -2,8 +2,14 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import { starlightBasePath } from "starlight-base-path";
-import starlightTags from 'starlight-tags';
 import starlightBlog from 'starlight-blog'
+// import starlightTags from 'starlight-tags';
+
+// Plugin imports with custom configurations
+import { custom_starlightTags } from './config/plugins/custom_starlightTags.mjs'
+
+// Custom configurations
+import { sidebar } from './config/sidebar.mjs';
 
 // https://astro.build/config
 export default defineConfig({
@@ -13,38 +19,11 @@ export default defineConfig({
 		starlight({
 			title: 'My Docs',
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
-			sidebar: [
-				{
-					label: 'Guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
-					],
-				},
-				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
-				},
-			],
+			sidebar,
 			plugins: [
 				starlightBasePath(),
-				starlightTags({
-					configPath: 'src/config/tags.yml',
-					tagsPagesPrefix: 'tags',
-					tagsIndexSlug: 'tags',
-					onInlineTagsNotFound: 'create',
-					itemsPerPage: 12,
-					sidebar: {
-						enabled: true,
-						position: 'bottom',			// 'top', 'bottom'
-						limit: 10,				// (0 = all)
-						sortBy: 'priority',			// 'count', 'alphabetical', or 'priority'
-						showCount: true,
-						collapsed: false,
-						showViewAllLink: true
-					}
-				}),
 				starlightBlog(),
+				custom_starlightTags,
 			],
 		}),
 	],
