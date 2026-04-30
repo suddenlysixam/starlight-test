@@ -12,12 +12,14 @@ import { custom_starlightUiTweaks } from './config/plugins/custom_starlightUiTwe
 import { custom_starlightAnnouncement } from './config/plugins/custom_starlightAnnouncement.mjs';
 
 // Custom configurations
+import { BASE_PATH } from './config/basePath.mjs';
 import { sidebar } from './config/sidebar.mjs';
+import { authors } from './config/authors.mjs';
 
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://suddenlysixam.github.io',
-	base: '/starlight-test',
+	base: BASE_PATH,
 	integrations: [
 		starlight({
 			title: 'My Docs',
@@ -25,7 +27,12 @@ export default defineConfig({
 			sidebar,
 			plugins: [
 				starlightBasePath(),
-				starlightBlog(),
+				starlightBlog({
+					title: 'Meetings',
+					prefix: 'meetings',
+					navigation: 'none',
+					authors,
+				}),
 				custom_starlightTags,
 				custom_starlightUiTweaks,
 				custom_starlightAnnouncement,

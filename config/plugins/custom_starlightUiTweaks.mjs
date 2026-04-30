@@ -1,9 +1,11 @@
 import starlightUiTweaks from 'starlight-ui-tweaks'
+import { withBase } from '../basePath.mjs';
 
 export const custom_starlightUiTweaks =
     starlightUiTweaks({
         navbarLinks: [
-            { label: "Documentation", href: "/guides/example" },
+            { label: "Documentation", href: withBase("/guides/example") },
+            { label: "Meetings", href: withBase("/meetings") },
         ],
         footer: {
             showSocialIcons: false,
