@@ -1,12 +1,15 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+
+// Plugin imports
 import { starlightBasePath } from "starlight-base-path";
 import starlightBlog from 'starlight-blog'
-// import starlightTags from 'starlight-tags';
 
 // Plugin imports with custom configurations
 import { custom_starlightTags } from './config/plugins/custom_starlightTags.mjs'
+import { custom_starlightUiTweaks } from './config/plugins/custom_starlightUiTweaks.mjs'
+import { custom_starlightAnnouncement } from './config/plugins/custom_starlightAnnouncement.mjs';
 
 // Custom configurations
 import { sidebar } from './config/sidebar.mjs';
@@ -24,6 +27,8 @@ export default defineConfig({
 				starlightBasePath(),
 				starlightBlog(),
 				custom_starlightTags,
+				custom_starlightUiTweaks,
+				custom_starlightAnnouncement,
 			],
 		}),
 	],

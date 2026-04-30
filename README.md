@@ -8,6 +8,10 @@
 `npm install starlight-tags`
 ### [starlight-blog](https://starlight-blog-docs.vercel.app/)
 `npm install starlight-blog`
+### [starlight-ui-tweaks](https://starlight-ui-tweaks.dlcastillop.com/)
+`npm install starlight-ui-tweaks`
+### [starlight-announcement](https://frostybee.github.io/starlight-announcement/)
+`npm install starlight-announcement`
 
 ## GitHub Pages Deployment
 
