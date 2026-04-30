@@ -1,18 +1,6 @@
 # starlight-test
 [![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
 
-## Plugins
-### [starlight-base-path](https://github.com/andriygm/starlight-base-path/)
-`npm install starlight-base-path`
-### [starlight-tags](https://frostybee.github.io/starlight-tags/)
-`npm install starlight-tags`
-### [starlight-blog](https://starlight-blog-docs.vercel.app/)
-`npm install starlight-blog`
-### [starlight-ui-tweaks](https://starlight-ui-tweaks.dlcastillop.com/)
-`npm install starlight-ui-tweaks`
-### [starlight-announcement](https://frostybee.github.io/starlight-announcement/)
-`npm install starlight-announcement`
-
 ## GitHub Pages Deployment
 
 1. [GitHub Docs: Creating a GitHub Pages site](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site)
@@ -23,6 +11,18 @@ Other:
 
 1. [GitHub Docs: Skipping workflow runs](https://docs.github.com/en/actions/how-tos/manage-workflow-runs/skip-workflow-runs)
     - Add `[skip actions]` to the commit message, or the HEAD commit of a pull request
+
+## Plugin Documentation
+### [starlight-announcement](https://frostybee.github.io/starlight-announcement/)
+`npm install starlight-announcement`
+### [starlight-base-path](https://github.com/andriygm/starlight-base-path/)
+`npm install starlight-base-path`
+### [starlight-blog](https://starlight-blog-docs.vercel.app/)
+`npm install starlight-blog`
+### [starlight-tags](https://frostybee.github.io/starlight-tags/)
+`npm install starlight-tags`
+### [starlight-ui-tweaks](https://starlight-ui-tweaks.dlcastillop.com/)
+`npm install starlight-ui-tweaks`
 
 ## Starlight Basics
 
