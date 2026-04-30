@@ -1,6 +1,54 @@
 # starlight-test
 [![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
 
+## How to Contribute
+
+### Adding Meetings
+
+Add or edit the files in `~/src/content/docs/meetings`
+
+### Adding Announcements
+
+<i>Announcements are the banners at the top of the website.</i>
+
+Add or edit the files in `~/src/announcements/`
+
+```mjs
+export default {
+  id: '<YYYY-MM-DD-name>', // Unique identifier
+  content: '<content>',
+  variant: '<style>', // Visual style: note, tip, caution, danger
+  dismissible: <boolean>,
+  link: {
+    text: '<text>',
+    href: '<link>', // Can be internal path
+  },
+  startDate: '<YYYY-MM-DD>',
+  endDate: '<YYYY-MM-DD>',
+  showOn: [<patterns>], // Glob patterns for pages to show on
+  hideOn: [<patterns>], // Glob patterns for pages to hide from
+};
+```
+
+See [plugin documentation](#plugin-documentation) for [starlight-announcement](#starlight-announcement)
+
+### Adding Tags
+
+Add or edit tags in `~/config/tags.yml`
+
+Add tags to pages in the frontmatter
+
+```
+---
+tags:
+  - tag1
+  - tag2
+  - ...
+---
+```
+
+See [plugin documentation](#plugin-documentation) for [starlight-tags](#starlight-tags)
+
 ## GitHub Pages Deployment
 
 1. [GitHub Docs: Creating a GitHub Pages site](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site)
