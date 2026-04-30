@@ -37,5 +37,8 @@ export const custom_starlightSidebarTopics =
         // topics: {
         //     reference: ['/staging/', '/staging/**/*'],
         // },
-        exclude: ['/meetings', '/meetings/**/*'],
+        exclude: [
+            '/meetings', '/meetings/**/*',
+            '/tags', '/tags/**/*',
+        ],
     });

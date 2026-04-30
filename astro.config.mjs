@@ -34,10 +34,10 @@ export default defineConfig({
 					navigation: 'none',
 					authors,
 				}),
-				custom_starlightTags,
 				custom_starlightUiTweaks,
 				custom_starlightAnnouncement,
 				custom_starlightSidebarTopics,
+				custom_starlightTags, // must be listed after 'custom_starlightSidebarTopics'
 			],
 		}),
 	],
