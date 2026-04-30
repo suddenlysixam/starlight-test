@@ -16,6 +16,7 @@
     "starlight-announcement": "^1.1.0",
     "starlight-base-path": "^0.1.1",
     "starlight-blog": "^0.26.1",
+    "starlight-sidebar-topics": "^0.7.1",
     "starlight-tags": "^1.0.1",
     "starlight-ui-tweaks": "^0.2.2"
   }

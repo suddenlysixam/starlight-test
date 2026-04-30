@@ -10,6 +10,7 @@ import starlightBlog from 'starlight-blog'
 import { custom_starlightTags } from './config/plugins/custom_starlightTags.mjs'
 import { custom_starlightUiTweaks } from './config/plugins/custom_starlightUiTweaks.mjs'
 import { custom_starlightAnnouncement } from './config/plugins/custom_starlightAnnouncement.mjs';
+import { custom_starlightSidebarTopics } from './config/plugins/custom_starlightSidebarTopics.mjs';
 
 // Custom configurations
 import { BASE_PATH } from './config/basePath.mjs';
@@ -24,7 +25,7 @@ export default defineConfig({
 		starlight({
 			title: 'My Docs',
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
-			sidebar,
+			// sidebar,
 			plugins: [
 				starlightBasePath(),
 				starlightBlog({
@@ -36,6 +37,7 @@ export default defineConfig({
 				custom_starlightTags,
 				custom_starlightUiTweaks,
 				custom_starlightAnnouncement,
+				custom_starlightSidebarTopics,
 			],
 		}),
 	],
